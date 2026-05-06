@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "allowSyntheticDefaultImports": true,
+    "allowJs": true,
+    "composite": true,
+    "outDir": "./node_modules/.vite-ts-node"
+  },
+  "include": ["vite.config.*"]
+}
+ 

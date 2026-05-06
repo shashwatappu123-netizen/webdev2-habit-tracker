@@ -11,7 +11,7 @@ export function HabitList({ visibleDates }: HabitListProps) {
 
   if (habits.length === 0) {
     return (
-      <p className="text-center text-zinc-500 py-12">
+      <p className="text-center text-white/60 py-12">
         No habits yet. Add one above to get started!
       </p>
     )
@@ -36,12 +36,12 @@ function HabitItem({ habit, visibleDates }: HabitItemProps) {
   const streak = getStreak(habit.completions)
 
   return (
-    <div className="rounded-xl bg-zinc-800 p-4 flex flex-col gap-3">
+    <div className="rounded-xl bg-white/10 backdrop-blur-sm border border-white/20 p-4 flex flex-col gap-3">
       <div className="flex items-center justify-between">
         <div className="flex gap-3 items-center">
-          <span className="font-medium">{habit.name}</span>
+          <span className="font-medium text-white">{habit.name}</span>
           {streak !== 0 && (
-            <span className="text-sm text-amber-400">🔥 {streak}</span>
+            <span className="text-sm text-orange-300">🔥 {streak}</span>
           )}
         </div>
         <Button

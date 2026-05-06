@@ -15,11 +15,11 @@ export function HabitForm() {
   }
 
   return (
-    <form className="flex gap-2" onSubmit={handleSubmit}>
+    <form className="flex gap-2 mb-6" onSubmit={handleSubmit}>
       <input
         value={name}
         onChange={e => setName(e.target.value)}
-        className="flex-1 rounded-lg bg-zinc-800 px-4 py-2 outline-none focus-visible:ring-2 focus-visible:ring-violet-500"
+        className="flex-1 rounded-lg bg-white/10 backdrop-blur-sm border border-white/20 px-4 py-2 text-white placeholder-white/50 outline-none focus-visible:ring-2 focus-visible:ring-white/50 focus-visible:border-white/50"
         placeholder="New habit..."
       />
       <Button

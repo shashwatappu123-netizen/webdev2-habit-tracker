@@ -32,11 +32,11 @@ export function Button({
 function getVariantStyles(variant: Variant) {
   switch (variant) {
     case "primary":
-      return "bg-violet-600 hover:bg-violet-500"
+      return "bg-white/20 hover:bg-white/30 text-white border border-white/30 backdrop-blur-sm"
     case "secondary":
-      return "bg-zinc-700 hover:bg-zinc-600 text-zinc-400"
+      return "bg-white/10 hover:bg-white/20 text-white/90 border border-white/20 backdrop-blur-sm"
     case "ghost-destructive":
-      return "hover:bg-red-800 text-red-800 hover:text-red-200"
+      return "hover:bg-red-500/20 text-red-300 hover:text-red-200 border border-red-500/30"
     default:
       throw new Error(`Invalid variant: ${variant satisfies never}`)
   }
